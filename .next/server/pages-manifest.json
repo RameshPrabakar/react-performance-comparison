@@ -1,0 +1,9 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js",
+  "/performance-dashboard": "pages/performance-dashboard.js",
+  "/ssg-example": "pages/ssg-example.js",
+  "/optimization-document": "pages/optimization-document.js"
+}

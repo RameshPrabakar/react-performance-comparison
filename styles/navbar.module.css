@@ -1,0 +1,128 @@
+/* navbar.module.css */
+
+.navbar {
+    background-color: #2563eb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: white;
+  }
+  
+  .menuButton {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  
+  .menuIcon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navLink {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: color 0.2s ease;
+  }
+  
+  .navLink:hover {
+    color: #bfdbfe;
+  }
+  
+  .navLink::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+  }
+  
+  .navLink:hover::after {
+    width: 100%;
+  }
+  
+  .mobileNav {
+    display: none;
+    padding: 1rem 0;
+  }
+  
+  .mobileNavOpen {
+    display: block;
+  }
+  
+  .mobileNavLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .mobileNavLink {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  .mobileNavLink:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .mainContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .footer {
+    background-color: #1f2937;
+    color: white;
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+  
+  .footerText {
+    font-weight: 500;
+  }
+  
+  .footerSubtext {
+    font-size: 0.875rem;
+    color: #9ca3af;
+    margin-top: 0.5rem;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .menuButton {
+      display: block;
+    }
+    
+    .navLinks {
+      display: none;
+    }
+  }

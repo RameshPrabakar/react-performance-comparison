@@ -1,0 +1,22 @@
+{
+    "name": "react-performance-comparison",
+    "version": "1.0.0",
+    "description": "Project comparing SSR and CSR performance in React applications",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "analyze": "ANALYZE=true next build"
+    },
+    "dependencies": {
+        "next": "^13.4.19",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-lazy-load-image-component": "^1.6.0",
+        "web-vitals": "^3.4.0"
+    },
+    "devDependencies": {
+        "@next/bundle-analyzer": "^13.4.19",
+        "lucide-react": "^0.482.0"
+    }
+}
